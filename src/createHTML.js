@@ -6,17 +6,17 @@ function createHTML(teamArray) {
         <div class="card-body">
             <div class="card">
                 <h2>${manager.getName()}</h2>
-                <h2>${manager.getRole()}</h2>
+                <h3>${manager.getRole()}</h3>
                 <div class="emp-contact">
                 <ul>
                     <li>
-                        <h3>${manager.getId()}</h3>
+                        <h4>${manager.getId()}</h4>
                     </li>
                     <li>
-                        <h3><a href="mailto: ${manager.getEmail()}">${manager.getEmail()}</a></h3>
+                        <h4><a href="mailto: ${manager.getEmail()}">${manager.getEmail()}</a></h4>
                     </li>
                     <li>
-                        <h3>${manager.getOfficeNumber()}</h3>
+                        <h4>${manager.getOfficeNumber()}</h4>
                     </li>
                 </ul>
             </div>
@@ -27,17 +27,17 @@ function createHTML(teamArray) {
     return `
             <div class="card">
                 <h2>${engineer.getName()}</h2>
-                <h2>${engineer.getRole()}</h2>
+                <h3>${engineer.getRole()}</h3>
                 <div class="emp-contact">
                     <ul>
                         <li>
-                            <h3>${engineer.getId()}</h3>
+                            <h4>${engineer.getId()}</h4>
                         </li>
                         <li>
-                            <h3><a href="mailto: ${engineer.getEmail()}">${engineer.getEmail()}</a></h3>
+                            <h4><a href="mailto: ${engineer.getEmail()}">${engineer.getEmail()}</a></h4>
                         </li>
                         <li>
-                            <h3><a href="https://github.com${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></h3>
+                            <h4><a href="https://github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></h4>
                         </li>
                     </ul>
                 </div>
@@ -48,17 +48,17 @@ function createHTML(teamArray) {
     return `
             <div class="card">
                 <h2>${intern.getName()}</h2>
-                <h2>${intern.getRole()}</h2>
+                <h3>${intern.getRole()}</h3>
                 <div class="emp-contact">
                     <ul>
                         <li>
-                            <h3>${intern.getId()}</h3>
+                            <h4>${intern.getId()}</h4>
                         </li>
                         <li>
-                            <h3><a href="mailto: ${intern.getEmail()}">${intern.getEmail()}</a></h3>
+                            <h4><a href="mailto: ${intern.getEmail()}">${intern.getEmail()}</a></h4>
                         </li>
                         <li>
-                            <h3>${intern.getSchool()}</h3>
+                            <h4>${intern.getSchool()}</h4>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +80,7 @@ function createHTML(teamArray) {
 
 module.exports = (teamArray) => {
   return `
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
