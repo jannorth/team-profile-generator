@@ -13,6 +13,8 @@ In the root folder, run "npm run test."
 
 ## Usage
 
-[Watch the walktrough video!](./assets/video/walkthrough.mov)
+https://drive.google.com/file/d/1Y-TJEOMhnzaBnXr03tAo7BOPjdxoO4BF/view
+
+[Watch the walktrough video!](/assets/video/team-profile-generator.webm)
 
 ![team-profile-generator-ss](/assets/images/team-gen-ss.jpg)
